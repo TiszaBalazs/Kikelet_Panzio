@@ -1,0 +1,23 @@
+﻿<Window x:Class="Kikelet_Panzio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kikelet_Panzio"
+        mc:Ignorable="d"
+        Title="Kikelet Panzió" Height="450" Width="800">
+    <StackPanel>
+        <Menu>
+            <MenuItem Header="Regisztrálás" Click="Regisztracio_Click"/>
+        </Menu>
+        <Label Content="Szobaszám" Margin="5"/>
+        <ComboBox Name="CbxSzobaszam" Margin="5" Width="70" HorizontalAlignment="Left"/>
+        <Label Content="Férőhely" Margin="5"/>
+        <ComboBox Name="CbxFerohely" Margin="5" Width="70" HorizontalAlignment="Left" SelectionChanged="CbxFerohely_SelectionChanged"/>
+        <Label Content="Ár" Margin="5"/>
+        <TextBox Name="TbxAr" Margin="5" Width="70" HorizontalAlignment="Left"/>
+        <Button Content="Mentés" Name="BtnMentes" Click="BtnMentes_Click" Width="50" Margin="10" HorizontalAlignment="Left"/>
+        <Button Content="Szoba(bák) lefoglalása" Name="BtnAllomanybamentes" Click="BtnAllomanybamentes_Click" Width="130" HorizontalAlignment="Left" Margin="10"/>
+        <DataGrid Name="DgrSzobaAdat" Margin="10"/>
+    </StackPanel>
+</Window>
