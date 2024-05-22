@@ -43,6 +43,10 @@ namespace Kikelet_Panzio
             szuletesidatum = DateTime.Parse(adatok[3]);
             vip =bool.Parse(adatok[4]);
         }
+        public override string ToString()
+        {
+            return $"{azonosito};{nev};{email};{szuletesidatum};{vip}";
+        }
 
         public string Azonosito { get => azonosito; set => azonosito = value; }
         public string Nev { get => nev; set => nev = value; }
@@ -95,7 +99,6 @@ namespace Kikelet_Panzio
                 TbxEmail.Text = string.Empty;
                 TbxSzuDatum.Text = string.Empty;
                 CkBVip.IsChecked = false;
-
             }
             
 
