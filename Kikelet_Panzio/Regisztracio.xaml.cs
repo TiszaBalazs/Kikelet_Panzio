@@ -95,6 +95,7 @@ namespace Kikelet_Panzio
                 TbxEmail.Text = string.Empty;
                 TbxSzuDatum.Text = string.Empty;
                 CkBVip.IsChecked = false;
+
             }
             
 
