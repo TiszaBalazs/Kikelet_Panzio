@@ -53,7 +53,7 @@ namespace Kikelet_Panzio
         public string Email { get => email; set => email = value; }
         public DateTime Szuletesidatum { get => szuletesidatum; set => szuletesidatum = value; }
         public bool Vip { get => vip; set => vip = value; }
-        
+         
     }
     /// <summary>
     /// Interaction logic for Regisztracio.xaml
